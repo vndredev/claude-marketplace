@@ -9,7 +9,7 @@
     {
       "name": "devkit-plugin",
       "description": "Clean Architecture + Dev Workflow Plugin for Claude Code",
-      "version": "0.23.2",
+      "version": "0.24.0",
       "repository": "https://github.com/vndredev/devkit-plugin",
       "install": "claude-plugin add vndredev/devkit-plugin"
     }
