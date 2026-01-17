@@ -4,38 +4,24 @@ Custom Claude Code plugins for development workflows.
 
 ## Available Plugins
 
-| Plugin                                                     | Description                       | Prod Version | Dev Source            |
-| ---------------------------------------------------------- | --------------------------------- | ------------ | --------------------- |
-| [devkit-plugin](https://github.com/vndredev/devkit-plugin) | Clean Architecture + Dev Workflow | v0.23.2      | `~/dev/devkit-plugin` |
+| Plugin                                                     | Description                       | Version |
+| ---------------------------------------------------------- | --------------------------------- | ------- |
+| [devkit-plugin](https://github.com/vndredev/devkit-plugin) | Clean Architecture + Dev Workflow | 0.23.2  |
 
 ## Installation
-
-**Production** (stable release):
 
 ```bash
 claude-plugin add vndredev/devkit-plugin
 ```
 
-**Development** (local source):
+## For Developers
 
-```bash
-claude-plugin add --local ~/dev/devkit-plugin
-```
-
-## Manifest
-
-Plugin metadata in `.claude-plugin/marketplace.json`:
+Local dev overrides via `.claude-plugin/local.json` (gitignored):
 
 ```json
 {
-  "plugins": [
-    {
-      "name": "devkit-plugin",
-      "versions": {
-        "prod": { "version": "0.23.2", "source": "github:..." },
-        "dev": { "version": "local", "source": "~/dev/..." }
-      }
-    }
-  ]
+  "devkit-plugin": {
+    "source": "~/dev/devkit-plugin"
+  }
 }
 ```
