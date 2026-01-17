@@ -11,7 +11,7 @@
       "description": "Clean Architecture + Dev Workflow Plugin for Claude Code",
       "version": "0.24.0",
       "repository": "https://github.com/vndredev/devkit-plugin",
-      "install": "claude-plugin add vndredev/devkit-plugin"
+      "source": "github:vndredev/devkit-plugin"
     }
   ]
 }
