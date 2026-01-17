@@ -1,0 +1,20 @@
+{
+  "name": "vndredev-marketplace",
+  "description": "Custom plugins for development workflows",
+  "owner": {
+    "name": "vndredev",
+    "github": "https://github.com/vndredev"
+  },
+  "plugins": [
+    {
+      "name": "devkit-plugin",
+      "description": "Clean Architecture + Dev Workflow Plugin for Claude Code",
+      "version": "0.23.2",
+      "author": {
+        "name": "vndredev"
+      },
+      "repository": "https://github.com/vndredev/devkit-plugin",
+      "install": "claude-plugin add vndredev/devkit-plugin"
+    }
+  ]
+}
