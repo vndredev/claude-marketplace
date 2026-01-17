@@ -9,12 +9,22 @@
     {
       "name": "devkit-plugin",
       "description": "Clean Architecture + Dev Workflow Plugin for Claude Code",
-      "version": "0.23.2",
       "author": {
         "name": "vndredev"
       },
       "repository": "https://github.com/vndredev/devkit-plugin",
-      "install": "claude-plugin add vndredev/devkit-plugin"
+      "versions": {
+        "prod": {
+          "version": "0.23.2",
+          "source": "github:vndredev/devkit-plugin@v0.23.2",
+          "install": "claude-plugin add vndredev/devkit-plugin"
+        },
+        "dev": {
+          "version": "local",
+          "source": "~/dev/devkit-plugin",
+          "install": "claude-plugin add --local ~/dev/devkit-plugin"
+        }
+      }
     }
   ]
 }
